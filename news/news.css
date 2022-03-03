@@ -1,0 +1,15 @@
+.main_news .news-top-text {
+    color: var(--red-color);
+    font-size: 17px !important;
+    margin-bottom: 0px !important;
+}
+.main_news .card-title{
+    line-height: 20px;
+    margin-bottom: 10px !important;
+}
+@media (max-width : 1200px) {
+    .news__container .header__card .harder__card-blur {
+        padding-bottom: 0;
+        height: 70%;
+    }
+}

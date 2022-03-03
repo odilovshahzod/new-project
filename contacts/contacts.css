@@ -1,0 +1,21 @@
+.main_contacts{
+    margin-bottom: 30px;
+}
+.main_contacts .container-min {
+    width: 66%;
+    margin: 0 auto;
+    margin-bottom: 85px;
+}
+.main_contacts .contacts__map-container{
+    width: 66%;
+    margin: 0 auto;
+}
+@media (max-width : 1200px) {
+    .contacts__container .header__card .harder__card-blur {
+        padding-bottom: 0;
+        height: 70%;
+    }
+    .main_contacts .contacts__map-container {
+        width: 100%;
+    }
+}

@@ -1,0 +1,542 @@
+.row{
+    margin: 0 !important;
+}
+.header_about{
+    margin-bottom: 40px;
+}
+.about__swiper-container{
+      width: 674px ;
+      margin-top:38px;
+      height: auto;
+}
+.about__swiper-container video {
+        width: 100%;
+        height: 100%;
+}
+.header_about .header__card{
+    width: 648px;
+}
+.header_about .harder__card-blur {
+    width: 435px;
+    padding-bottom: 20px;
+    bottom: 80px;
+}
+.header_about .header__card-text {
+    margin: 0 !important;
+}
+.header_about .header__card::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 0;
+    height: 55px;
+    background: var(--red-color);
+    background-image: url('../img/adras.svg');
+    transition: 1.5s all ease;
+}
+.left_reveal-anim{
+    left: -50%;
+    transition: 1s all ease;
+}
+.left_reveal-anim.active {
+    left: 0;
+}
+.left_reveal-anim.active.header__card::before{
+    width: 100%;
+}
+ /* --------------------- about-us ---------------------- */
+.main_about-company .about-us{
+      padding: 0px 0 50px;
+}
+.main_about-company .about-us .container-min img{
+    width: 598px;
+    height: 470px;
+}
+.main_about-company .about-us__wrapper {
+    height: 470px;
+}
+.main_about-company .about-us__card{
+      color: #000;
+      top: 0;
+      transform: translateY(0);
+      width: 860px;
+      height: 410px;
+      padding: 10px 0 0px 110px;
+}
+.main_about-company .about-us__card .company{
+    font-size: 20px;
+}
+.main_about-company .about-us__card-title {
+    padding: 18px 0 0px;
+}
+.main_about-company .card-text {
+    font-size: 13px;
+    width: 475px;
+    margin-bottom: 30px;
+}
+/* -------------------------- company-values ------------------------- */
+.main_about-company .company-values{
+    height: auto;
+}
+.company-values__card{
+    height: 100px !important;
+    padding-bottom: 0 !important;
+}
+.main_about-company .container-min {
+ width: 70%;
+ margin: 20px auto;
+}
+.company-values__item p{
+    font-size: 15px;
+}
+.company-values__item img{
+    height: 75px;
+}
+.company-values__item .card-title {
+    font-size: 20px;
+    margin: 10px 0 5px !important;
+    font-weight: 700;
+    color: var(--red-color);
+}
+/* ---------------------- company-activities --------------------------- */
+.main_about-company .company-activities{  
+    padding-bottom: 20px;
+}
+.company-activities__card{
+    height: 130px !important;
+    padding-bottom: 0 !important;
+}
+.company-activities .news__list .news__item .card-blur {
+    top: 0;
+    padding: 40px 30px;
+    left: 346px;
+    width: 540px;
+    height: 88%;
+}
+.company-activities .news__list .right_item .card-blur {
+    left: -28% !important;
+}
+.company-activities .news__list .news__item img{
+    width: 445px;
+    height: 275px;
+}
+/* ----------------------- our-advantages ------------- */
+.our-advantages__card{
+    left: 60% ;
+    text-align: right;
+    padding: 0 33% 0 0 !important;
+}
+.left_reveal.active{
+    left: 0;
+}
+.our-advantages .left_reveal-card::after{
+  left: 74.5%;
+  width: 350px;
+  height: 53px;
+}
+.our-advantages .company-values__item img {
+    width: 30%;
+    height: auto;
+}
+.our-advantages .company-values__item p{
+    width: 240px;
+}
+.our-advantages .company-values__item .card-title {
+    font-size: 20px;
+}
+.our-advantages .company-values__item-bottom {
+    padding-left: 90px;
+}
+
+/* ------------------------------------------------------------------------- */
+@media (max-width : 1200px) {
+    .header_about{
+        width: 100%;
+        padding-top: 0;
+        background-image: url('../img/main-preview.jpg');
+        background-position: right top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        margin: 0;
+    }
+    .about__swiper-container{
+        display: none;
+    }
+    .header_about .header__card {
+        position: absolute;
+        width: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: auto;
+        bottom: 0px;
+    }
+    .header_about .harder__card-blur {
+        width: 650px;
+        height: auto;
+        bottom: 0;
+    }
+    .header_about .header__card::before {
+        display: none;
+    }
+    .about__swiper-container {
+        width: 100% ;
+        height: 100%;
+    }
+    /* ------------- */
+    .main_about-company .about-us {
+        margin-top: 130px !important;
+    }
+    .main_about-company .about-us .container-min{
+        width: 100%;
+        height: 435px;
+        overflow: hidden;
+    }
+    .main_about-company .about-us .container-min img {
+        width: 100%;
+        height: auto;
+    }
+    .main_about-company .about-us__wrapper {
+        width: 100%;
+        height: 470px;
+    }
+    .main_about-company .about-us__card {
+        width: 100%;
+    }
+    .main_about-company .about-us__card {
+        color: #000;
+        top: 75px;
+        width: 648px;
+        padding: 40px 0 0px 75px;
+    }
+/* --------------------------------------- */
+    .main_about-company .company-values {
+        height: auto;
+    }
+    .company-values__card  .card-title{
+        margin: 0 !important;
+    }
+    .company-values__card .company {
+        font-size: 33px;
+    }
+    .company-values__item {
+        height: auto;
+        text-align: center;
+    }
+    .company-values__item p {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .company-values__item img {
+        height: 38%;
+    }
+    .company-values__item .card-title {
+        width: 50%;
+        line-height: 22px;
+        margin: 12px auto !important;
+        font-size: 20px;
+
+    }
+/* --------------------------------- */
+    .main_about-company .company-activities {
+        padding-bottom: 20px;
+    }
+    .company-activities .container-min{
+        width: 66%;
+    }
+    .company-activities .news__list .news__item img{
+        width: 60%;
+    }
+    .company-activities .news__list .news__item .card-blur {
+        padding: 2px 30px;
+        left: 43%;
+        width: 54%;
+        height: auto;
+    }
+    .company-activities .news__list .right_item .card-blur {
+        left: -2% !important;
+    }
+    .company-activities .news__list .right_item .card-blur .header__card-text {
+        padding: 0;
+    }
+/* --------------------------------- */
+    .our-advantages__card {
+        text-align: right;
+    }
+    .our-advantages .left_reveal-card::after {
+        width: 40%;
+        height: 53px;
+    }
+    .our-advantages .our-advantages__card .card-title {
+        position: absolute;
+        right: 15%;
+        margin-top: 0px !important;
+        transform: translateX(-50%);
+    }
+    .our-advantages .company-values__list {
+        width: 100% !important;
+    }
+    .our-advantages .company-values__item {
+        text-align: center;
+        padding: 0;
+    }
+    .our-advantages .company-values__item img{
+        width: auto;
+        height: 40%;
+        margin: 10px auto;
+    }
+    .our-advantages .company-values__item .card-title{
+        position: relative;
+        margin: 15px auto !important;
+        width: 100%;
+        text-align: center;
+    }
+    .our-advantages .company-values__item p {
+        width: 80%;
+    }
+    .our-advantages .company-values__item-bottom {
+        padding: 0 !important;
+    }
+        .footer__wrapper {
+            width: 100%;
+            height: 420px;
+            background-position: center;
+            background-size: cover;
+            margin: 140px 0 350px;
+        }
+
+        .footer__wrapper .card-blur {
+            left: 50%;
+        }
+        .footer__info {
+            left: 50% !important;
+            transform: translateX(-50%);
+            margin: 0 auto;
+        }
+}
+@media (max-width : 770px) {
+     .header_about {
+        width: 100%;
+        background-size: 100% 67%;
+        margin-bottom: 0;
+        margin-top: 1px;
+        }
+     .header_about .header__card {
+         width: 100%;
+     }
+     .header_about .harder__card-blur {
+         width: 83%;
+         padding: 38px 35px 0!important;
+         bottom: 80px;
+         height: auto;
+     }
+     .header_about .header__card .card-title {
+         margin-bottom: 8px;
+        }
+        
+     /* ------------------------ */
+     .main_about-company .about-us {
+         margin: 0 !important;
+     }
+         .main_about-company .about-us .container-min {
+             width: 100%;
+             height: auto;
+             overflow: hidden;
+         }
+
+         .main_about-company .about-us .container-min img {
+             width: 100%;
+             height: 250px;
+         }
+
+         .main_about-company .about-us__wrapper {
+             width: 100%;
+             height: 340px;
+         }
+
+         .main_about-company .about-us__card {
+             top: 15%;
+             padding: 0px 35px 10px;
+             height: 62%;
+             width: 83%;
+            }
+         .main_about-company .about-us__card .card-title {
+             margin-bottom: 5px !important;
+             padding: 0;
+            }
+            .main_about-company .about-us__card .company {
+                font-size: 14px;
+            }
+            .main_about-company .about-us__card .card-text {
+                width: 100%;
+                margin: 0;
+                margin-bottom: 20px;
+            }
+
+            .left_reveal-card .company {
+                font-size: 24px;
+            }
+/* --------------- */
+             .company-activities .news__list {
+                width: 100%;
+             }
+            .company-activities .news__list .news__item img {
+                width: 50%;
+                height: 50%;
+            }
+             .company-activities .news__list .news__item .card-blur {
+                padding: 2px 20px;
+                width: 40%;
+            }
+         .company-activities .news__list .right_item .card-blur {
+             left: 17% !important;
+             padding: 2px 20px;
+             
+            }
+/* ------------- */
+            .our-advantages .left_reveal-card {
+                height: auto !important;
+            }
+            .our-advantages .left_reveal-card::after {
+                left: 70%;
+                width: 40%;
+                height: 45px;
+            }
+             .our-advantages .company-values__item p {
+                 width: 66% !important;
+             }
+                .footer__wrapper {
+                    margin: 140px 0 300px;
+                }
+}
+@media (max-width : 576px) {
+    .left_reveal-card .card-title{
+        font-size: 23px;
+        line-height: 22px;
+    }
+    .header_about .header__card {
+        bottom: 130px;
+    }
+    .header_about{
+        padding: 120px 0 10px;
+    }
+         .header_about .harder__card-blur {
+             width: 85%;
+             padding: 38px 35px 20px !important;
+             height: auto;
+         }
+         .header_about .header__card .card-title {
+             font-size: 18px;
+             margin-bottom: 0 !important;
+         }
+         .main_about-company .about-us{
+             padding: 0 !important;
+         }
+           .main_about-company .about-us__wrapper {
+               width: 100%;
+               margin-top: 70px;
+               height: auto;
+           }
+            .main_about-company .about-us__card {
+               padding: 0px 35px 10px;
+               height: auto !important;
+               width: 85% !important;
+           }
+            .main_about-company .about-us .container-min {
+                width: 100%;
+                overflow: hidden;
+                padding: 0 !important;
+            }
+
+            .main_about-company .about-us .container-min img {
+                height: auto !important;
+            }
+            .company-values__list{
+                width: 100%;
+            }
+            .company-values__item{
+                margin: 20px 0;
+            }
+            .company-values__item img {
+                width: 30%;
+                height: auto;
+            }
+            .company-values__item .card-title{
+                font-size: 16.5px;
+                line-height: 18px;
+                width: 58%;
+            }
+                          .our-advantages .container-min {
+                              width: 100%;
+                          }
+
+                          .our-advantages .company-values__list {
+                              width: 100% !important;
+                              margin: 0 !important;
+                              left: 0;
+                              transform: translateX(0);
+                          }
+
+                          .our-advantages .company-values__list img {
+                              width: 60px;
+                              height: 60px;
+                          }
+       .company-activities .container-min {
+           width: 100%;
+       }
+           .company-activities .news__list {
+               width: 100%;
+               left: -30px;
+            }
+            .company-activities .news__list .news__item img {
+                width: 80%;
+                height: auto;
+            }
+            .company-activities .news__list .news__item .card-blur {
+                padding: 10px 20px;
+                width: 40%;
+                height: auto;
+             }
+            .company-activities .news__list .right_item .card-blur {
+                       left: 17% !important;
+                       height: auto;
+                       padding: 2px 20px;
+            }
+            .our-advantages{
+                height: auto !important;
+            }
+           .our-advantages .our-advantages__card .card-title {
+               position: absolute;
+               right: 15%;
+               margin-top: 0px !important;
+               transform: translateX(-50%);
+           }
+               .our-advantages .our-advantages__card .card-title {
+                   position: relative;
+                   right: 10px;
+                   margin-top: 0px !important;
+                   transform: translateX(0);
+               }
+
+}
+@media (max-width : 460px) {
+    .header_about{
+        margin-bottom: 10px;
+    }
+    .header_about .header__card-text {
+        font-size: 9px !important;
+    }
+    .company-activities .news__item{
+        height: auto;
+    }
+    .company-activities .news__list .card-blur {
+        height: auto;
+        width: 170px !important;
+        padding: 0;
+    }
+    .company-activities .news__list .news__item img {
+        width: 80%;
+        height: 200px;
+    }
+}
